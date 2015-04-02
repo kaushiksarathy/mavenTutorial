@@ -87,7 +87,7 @@ class traverse {
              System.out.println(obj.get("name"));
              System.out.println(obj.get("urlPattern"));
              //System.out.println(obj.get("entities"));
-             JSONArray entities= (JS    ONArray) obj.get("entities");
+             JSONArray entities= (JSONArray) obj.get("entities");
 
              Iterator i=entities.iterator();
              int k=0;
