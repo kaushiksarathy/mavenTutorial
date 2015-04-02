@@ -1,0 +1,19 @@
+{
+  "name": "stock detail",
+  "urlPattern": "http://www.amazon.in/*",
+  "entities": [
+    {
+      "name": "stock details",
+      "type": "OTHER",
+      "id": "stock_details",
+      "uPath": [
+        {
+          "classNames": "a-size-medium a-color-success",
+          "tagName": "SPAN",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    }
+  ]
+}

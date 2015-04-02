@@ -1,0 +1,19 @@
+{
+  "name": "quickbartest",
+  "urlPattern": "http://www.flipkart.com/*",
+  "entities": [
+    {
+      "name": "flipkartquickbar",
+      "type": "OTHER",
+      "id": "flipkartquickbar",
+      "uPath": [
+        {
+          "classNames": "menubar newMenu",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    }
+  ]
+}

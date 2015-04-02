@@ -1,0 +1,97 @@
+{
+  "name": "price",
+  "urlPattern": "http://www.amazon.in/*",
+  "entities": [
+    {
+      "name": "pin",
+      "type": "OTHER",
+      "id": "pin",
+      "uPath": [
+        {
+          "id": "ddmSelectedAddressText",
+          "tagName": "SPAN",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "name": "offers",
+      "type": "DISCOUNT",
+      "id": "offers",
+      "uPath": [
+        {
+          "classNames": "a-box-inner a-padding-base",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "name": "offer",
+      "type": "DISCOUNT",
+      "id": "offer",
+      "uPath": [
+        {
+          "tagName": "A",
+          "indexNumber": 0,
+          "unique": false
+        },
+        {
+          "classNames": "a-size-small",
+          "tagName": "SPAN",
+          "indexNumber": 0,
+          "unique": false
+        },
+        {
+          "classNames": "a-box-inner a-padding-base",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "name": "stockdetails",
+      "type": "OTHER",
+      "id": "stockdetails",
+      "uPath": [
+        {
+          "classNames": "a-size-medium a-color-success",
+          "tagName": "SPAN",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "name": "seller",
+      "type": "SLA",
+      "id": "seller",
+      "uPath": [
+        {
+          "id": "merchant-info",
+          "classNames": "a-section a-spacing-mini",
+          "tagName": "DIV",
+          "indexNumber": 1,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "name": "price",
+      "type": "PRICE",
+      "id": "price",
+      "uPath": [
+        {
+          "id": "priceblock_saleprice",
+          "classNames": "a-size-medium a-color-price",
+          "tagName": "SPAN",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+function getValueForPath(xpath)
+{
+	return document.evaluate(xpath, document, null, XPathResult.ANY_TYPE, null).stringValue;
+}
+if(document.evaluate("boolean(//body[@class='product'])",  document, null, XPathResult.ANY_TYPE, null).booleanValue){
+	try {
+		var pId = getValueForPath("string(//form[@name='express-checkout-form']//input/@data-pid)")
+		var pixelUrl = "//px.adadyn.com/dpx?px_id=219&type=1&adv_id=60&section=3&pid=" + pId;
+		var ozDiv = document.createElement("div");
+		ozDiv.innerHTML = "<iframe src='" + pixelUrl + "' width=1 height=1 />"; 
+		document.getElementsByTagName('body')[0].appendChild(ozDiv);
+		}catch(err){		
+	}	
+}else if(document.evaluate("boolean(//body[contains(@class,'NewStoreBrowse')]) or boolean(//body[@class='NewLandingPage ']) ",  document, null, XPathResult.ANY_TYPE, null).booleanValue){
+	try {
+		var cat = getValueForPath("string(//input[@name='omniture_eVar1']/@value)");
+		var subCat1 = getValueForPath("string(//input[@name='omniture_eVar16']/@value)");
+		var subCat2 = getValueForPath("string(//input[@name='omniture_eVar17']/@value)");
+		var pixelUrl = "//px.adadyn.com/dpx?px_id=218&type=1&adv_id=60&section=2&cat_id=" + cat + "&sub_cat1_id=" + subCat1 +"&sub_cat2_id=" + subCat2;
+		var ozDiv = document.createElement("div");
+		ozDiv.innerHTML = "<iframe src='" + pixelUrl + "' width=1 height=1 />"; 
+		document.getElementsByTagName('body')[0].appendChild(ozDiv);
+		}catch(err){		
+	}	
+}

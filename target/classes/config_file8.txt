@@ -1,0 +1,32 @@
+{
+  "name": "snapdeals",
+  "urlPattern": "http://www.snapdeal.com/*",
+  "entities": [
+    {
+      "name": "price",
+      "type": "PRICE",
+      "id": "price",
+      "uPath": [
+        {
+          "id": "selling-price-id",
+          "tagName": "SPAN",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    },
+    {
+      "name": "sellers",
+      "type": "SLA",
+      "id": "sellers",
+      "uPath": [
+        {
+          "id": "mvFrstVendorInfo",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    }
+  ]
+}

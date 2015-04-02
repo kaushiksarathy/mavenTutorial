@@ -1,0 +1,19 @@
+{
+  "name": "seller",
+  "urlPattern": "http://www.flipkart.com/*",
+  "entities": [
+    {
+      "name": "ws retail",
+      "type": "SLA",
+      "id": "ws_retail",
+      "uPath": [
+        {
+          "classNames": "seller-name",
+          "tagName": "A",
+          "indexNumber": 1,
+          "unique": true
+        }
+      ]
+    }
+  ]
+}

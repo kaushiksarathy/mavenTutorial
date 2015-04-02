@@ -1,0 +1,21 @@
+{
+  "name": "find image",
+  "urlPattern": "http://www.flipkart.com/*",
+  "entities": [
+    {
+      "name": "image",
+      "type": "OTHER",
+      "id": "image",
+      "uPath": [
+        {
+          "classNames": "gd-row fk-hp-module-seperation tpadding15 bpadding25",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    }
+  ]
+}
+
+

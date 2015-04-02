@@ -1,0 +1,37 @@
+{
+  "name": "uniqueparent",
+  "urlPattern": "http://www.flipkart.com/*",
+  "entities": [
+    {
+      "name": "helmetimage",
+      "type": "OTHER",
+      "id": "helmetimage",
+      "uPath": [
+        {
+          "classNames": "fk-text-center offerWrap",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": false
+        },
+        {
+          "classNames": "dealsLink",
+          "tagName": "A",
+          "indexNumber": 0,
+          "unique": false
+        },
+        {
+          "classNames": "offers-wrap ccarousel-item no-js fk-inline-block",
+          "tagName": "LI",
+          "indexNumber": 1,
+          "unique": false
+        },
+        {
+          "classNames": "list-items list-carousel no-js",
+          "tagName": "UL",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "nonunique_parent",
+  "urlPattern": "http://www.flipkart.com/*",
+  "entities": [
+    {
+      "name": "household",
+      "type": "OTHER",
+      "id": "household",
+      "uPath": [
+        {
+          "tagName": "SPAN",
+          "indexNumber": 0,
+          "unique": false
+        },
+        {
+          "classNames": "fk-font-15",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": false
+        },
+        {
+          "classNames": "navBox tpadding10 fk-text-center",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": false
+        },
+        {
+          "classNames": "unit size1of3",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": false
+        },
+        {
+          "classNames": "lifeStyle",
+          "tagName": "DIV",
+          "indexNumber": 0,
+          "unique": false
+        }
+      ]
+    }
+  ]
+}

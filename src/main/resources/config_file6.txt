@@ -1,0 +1,19 @@
+{
+  "name": "moto g",
+  "urlPattern": "http://www.flipkart.com/*",
+  "entities": [
+    {
+      "name": "price moto g",
+      "type": "PRICE",
+      "id": "price_moto_g",
+      "uPath": [
+        {
+          "classNames": "selling-price omniture-field",
+          "tagName": "SPAN",
+          "indexNumber": 0,
+          "unique": true
+        }
+      ]
+    }
+  ]
+}
